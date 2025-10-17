@@ -1,0 +1,122 @@
+
+
+#cards-area{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+header h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* პატარა ოქროსფერი ეფექტი */
+}
+
+
+.clickable-title {
+  cursor: pointer;           /* მაუსი შეცვლის იერს */
+  transition: color 0.3s;    /* ფერის მავზიანად ცვლილება */
+}
+
+.clickable-title:hover {
+  color: #ffd700;            /* ოქროსფერი ფერი hover-ზე */
+  text-decoration: underline; /* ხაზს უსვამს */
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.clickable-title:hover {
+  text-decoration: underline;
+}
+
+#filter-buttons button {
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+aside .card {
+  border-left: 5px solid #dc3545;
+}
+
+.proceed-btn {
+  background-color: #dc3545; /* default red */
+  border: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 12px 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.proceed-btn:hover {
+  background-color: #ffc107; /* yellow on hover */
+  color: #212529; /* dark text for contrast */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.proceed-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.proceed-btn {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 12px 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.proceed-btn:hover {
+  background-color: #ffc107;
+  color: #212529;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
