@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initTheme();
 });
 
-// Theme management
 function initTheme() {
   const savedTheme = localStorage.getItem('theme') || 'light';
   document.body.setAttribute('data-theme', savedTheme);

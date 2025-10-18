@@ -13,18 +13,17 @@ header h1 {
 
 header nav a:hover {
   text-decoration: underline;
-  color: #ffd700; /* პატარა ოქროსფერი ეფექტი */
+  color: #ffd700; 
 }
 
 
 .clickable-title {
-  cursor: pointer;           /* მაუსი შეცვლის იერს */
-  transition: color 0.3s;    /* ფერის მავზიანად ცვლილება */
+  cursor: pointer;           
 }
 
 .clickable-title:hover {
-  color: #ffd700;            /* ოქროსფერი ფერი hover-ზე */
-  text-decoration: underline; /* ხაზს უსვამს */
+  color: #ffd700;            
+  text-decoration: underline; 
 }
 
 
@@ -79,7 +78,7 @@ aside .card {
 }
 
 .proceed-btn {
-  background-color: #dc3545; /* default red */
+  background-color: #dc3545; 
   border: none;
   color: white;
   font-weight: 600;
@@ -91,8 +90,8 @@ aside .card {
 }
 
 .proceed-btn:hover {
-  background-color: #ffc107; /* yellow on hover */
-  color: #212529; /* dark text for contrast */
+  background-color: #ffc107; 
+  color: #212529; 
   transform: translateY(-2px);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
 }
