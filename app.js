@@ -209,11 +209,16 @@ function updateProduct(quantity, price, id) {
 
 function updateProductMinus(quantity, price, id) {
   if (quantity <= 1) {
-    deleteProduct(id);
+    const confirmDelete = confirm("ნამდვილად გსურს ამ პროდუქტის წაშლა კალათიდან?");
+    if (confirmDelete) {
+      deleteProduct(id);
+    }
     return;
   }
+
   const newQuantity = quantity - 1;
   const totalPrice = price * newQuantity;
+
   fetch(`${_BASE_URL}Baskets/UpdateBasket`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
@@ -225,6 +230,7 @@ function updateProductMinus(quantity, price, id) {
     }
   });
 }
+
 
 async function filterByCategory(categoryId) {
   try {
